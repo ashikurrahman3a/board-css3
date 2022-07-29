@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles or container */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #E3F1FF;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.container {
+  background-color: cadetblue;
+  width: 870px;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 21px;
+}
+
+/* top players style */
+.top-players {
+  margin-bottom: 30px;
+}
+
+hr {
+  border: 2px solid rebeccapurple;
+  margin-bottom: 27px;
+}
+
+.section-title {
+  color: wheat;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+
+}
+
+.player {
+  display: flex;
+  align-items: center;
+}
+
+.player img {
+  width: 56px;
+  height: 56px;
+}
+
+.player-name {
+  margin-left: 16px;
+  font-size: 18px;
+
+}
+
+/* top blog styles */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
+}
+
+.blog {
+  display: flex;
+}
+
+.blog .thumbnail img {
+  width: 177px;
+  height: 117px;
+}
+
+.blog-info {
+  margin-left: 16px;
+}
+
+.blog-title {
+  font-size: 20px;
+}
+
+.bloge-author {
+  color: #9f9f9f;
+  font-size: 16px;
+}
+
+.bloge-author {
+  text-decoration: none;
+  font-size: 16px;
+
+}
+
+/* ---courses styles---- */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+
+}
+
+.course .course-banner img {
+  width: 200px;
+  height: 104px;
+}
+
+.course-info {
+  display: flex;
+  align-items: center;
+
+}
+
+.fa-star.filled {
+  color: gold;
+
+}
+
+.fa-star.empty {
+  color: lavender;
+
+}
+
+/*------media queries---- */
+
+/*=== mobile divices ===*/
+@media only screen and (max-width:688px) {
+  .container {
+    width: 100%;
+  }
+
+  .players,
+  .blogs,
+  .courses {
+
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .player,
+  .blog {
+    flex-direction: column;
+  }
+}
+
+/*== tablet divice== */
+@media only screen and (min-width:688px) and (max-width:992px) {
+  .container {
+    width: 100%;
+  }
+
+  .players,
+  .blogs,
+  .courses {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .player,
+  .blog {
+    flex-direction: column;
+  }
+}
